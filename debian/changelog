@@ -1,3 +1,9 @@
+python-pyst (0.6.99+git2-6c217fcd6-1) unstable; urgency=medium
+
+  * Upstream tab fix
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 10 Oct 2015 18:28:21 +0200
+
 python-pyst (0.6.99+git1-7f3e19c6d-1) unstable; urgency=medium
 
   * Updated to current Upstream
