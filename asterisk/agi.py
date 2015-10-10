@@ -20,7 +20,6 @@ pyvr
 """
 
 import sys, pprint, re
-from types import ListType
 import signal
 
 DEFAULT_TIMEOUT = 2000 # 2sec timeout used as default for functions that take timeouts
@@ -160,7 +159,7 @@ class AGI:
             raise AGIUnknownError(code, 'Unhandled code or undefined response')
 
     def _process_digit_list(self, digits):
-        if type(digits) == ListType:
+        if isinstance(digits,(list,tuple)):
             digits = ''.join(map(str, digits))
         return self._quote(digits)
 
