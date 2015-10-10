@@ -81,7 +81,7 @@ class _Msg(object):
         return self.headers[hname]
 
     def __repr__(self):
-        return self.headers['Response']
+        return self.headers.get('Response',self.__class__.__name__)
 
 
 class ManagerMsg(_Msg): 
